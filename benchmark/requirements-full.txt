@@ -1,0 +1,24 @@
+# =============================================================================
+# CGM Benchmark — 完整依赖（Mock 模式 + GPU 模型推理）
+#
+# 安装:  pip install -r requirements-full.txt
+# 系统依赖: apt install graphviz  (graphviz 二进制)
+# =============================================================================
+
+# 深度学习框架
+torch>=2.0.0
+transformers>=4.45.0
+accelerate>=0.20.0
+
+# Qwen3-VL
+qwen-vl-utils>=0.0.6
+
+# VT 模块 (CodeGraphRenderer + ContextCompressor)
+Pillow>=9.0.0
+numpy>=1.24.0
+graphviz>=0.20.0
+networkx>=3.0
+
+# 训练/推理加速 (可选 — 量化 + LoRA)
+bitsandbytes>=0.41.0
+peft>=0.7.0

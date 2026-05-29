@@ -1,0 +1,24 @@
+# =============================================================================
+# CGM Benchmark — GPU / 完整模型推理 依赖
+#
+# 安装:
+#   pip install -r requirements.txt -r requirements-gpu.txt
+# =============================================================================
+
+# 深度学习框架
+torch>=2.0.0
+transformers>=4.45.0
+accelerate>=0.20.0
+
+# Qwen3-VL
+qwen-vl-utils>=0.0.6
+
+# VT 模块 (CodeGraphRenderer + ContextCompressor)
+Pillow>=9.0.0
+numpy>=1.24.0
+graphviz>=0.20.0
+networkx>=3.0
+
+# 训练/推理加速 (可选)
+bitsandbytes>=0.41.0
+peft>=0.7.0
